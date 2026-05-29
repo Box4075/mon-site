@@ -1,32 +1,108 @@
-/* Style général de la page */
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style général */
 body {
-  background-color: #ffffff;
-  color: #000000;
   font-family: Arial, sans-serif;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  background-color: #0f0f1a;
+  color: #eaeaea;
 }
 
-/* Titre principal */
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a2e;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+}
+
+.nav-logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00d4ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #eaeaea;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #00d4ff;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
 h1 {
-  color: #ff6b6b;
-  font-size: 20px;
+  font-size: 42px;
+  color: #00d4ff;
+  margin-bottom: 15px;
 }
 
-/* Sous-titres */
 h2 {
+  font-size: 28px;
   color: #a29bfe;
-  border-bottom: 2px solid #a29bfe;
-  padding-bottom: 5px;
+  margin-bottom: 25px;
 }
 
-/* Liens */
+/* Cartes compétences */
+.cartes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.carte {
+  background-color: #1a1a2e;
+  border: 1px solid #a29bfe;
+  border-radius: 10px;
+  padding: 20px 25px;
+  font-size: 16px;
+  flex: 1 1 200px;
+}
+
+.carte:hover {
+  background-color: #a29bfe;
+  color: #0f0f1a;
+  cursor: default;
+}
+
+/* Contact */
 a {
   color: #00d4ff;
 }
 
-/* Liste */
-li {
-  margin: 5px 0;
+/* Responsive mobile */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
 }
