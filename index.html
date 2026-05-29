@@ -1,45 +1,231 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-    <title>Mon premier site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dany — Tech IT</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-    <!-- Barre de navigation -->
+    <div class="bg-orbs">
+      <div class="orb orb1"></div>
+      <div class="orb orb2"></div>
+      <div class="orb orb3"></div>
+    </div>
+
     <nav>
-      <div class="nav-logo">Box4075</div>
+      <div class="nav-logo">DANY</div>
       <ul class="nav-links">
         <li><a href="#apropos">À propos</a></li>
         <li><a href="#competences">Compétences</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
       </ul>
     </nav>
 
-    <!-- Section À propos -->
-    <section id="apropos">
-      <h1>Bienvenue sur mon site</h1>
-      <p>Je suis technicien informatique et j'apprends le développement web.</p>
-    </section>
-
-    <!-- Section Compétences -->
-    <section id="competences">
-      <h2>Mes compétences</h2>
-      <div class="cartes">
-        <div class="carte">🌐 Réseaux</div>
-        <div class="carte">🖥️ Administration système</div>
-        <div class="carte">🔥 OPNsense</div>
-        <div class="carte">📦 Proxmox</div>
-        <div class="carte">💾 NAS Synology</div>
-        <div class="carte">🌍 HTML / CSS</div>
+    <section id="hero">
+      <div class="glass-card hero-card">
+        <div class="hero-left">
+          <div class="badge">🚀 Disponible pour missions</div>
+          <h1>Tech<br><span class="gradient-text">IT Expert</span></h1>
+          <p class="hero-sub">Sys &amp; Réseaux · Guyane 🌴<br>Infrastructure · Virtualisation · Sécurité</p>
+          <div class="hero-btns">
+            <a href="#competences" class="btn-primary">Voir mes skills</a>
+            <a href="#contact" class="btn-secondary">Me contacter</a>
+          </div>
+        </div>
+        <div class="hero-avatar">D</div>
       </div>
     </section>
 
-    <!-- Section Contact -->
-    <section id="contact">
-      <h2>Me contacter</h2>
-      <p>Email : <a href="mailto:tonemail@example.com">tonemail@example.com</a></p>
+    <section id="apropos">
+      <div class="section-header">
+        <span class="section-tag">À propos</span>
+        <h2>Qui suis-je ?</h2>
+      </div>
+      <div class="glass-card">
+        <p class="apropos-text">
+          Technicien informatique et admin sys &amp; réseaux, je gère des infrastructures
+          clients au quotidien. Pare-feux, virtualisation, NAS, VPN — c'est mon terrain.
+          En parallèle, j'apprends le développement web pour élargir mes compétences.
+        </p>
+      </div>
     </section>
+
+    <section id="competences">
+      <div class="section-header">
+        <span class="section-tag">Stack technique</span>
+        <h2>Mes compétences</h2>
+      </div>
+      <div class="progress-grid glass-card">
+        <div class="progress-item">
+          <div class="progress-header">
+            <span>Réseaux</span><span>90%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="--w:90%;--color1:#7c3aed;--color2:#60a5fa"></div>
+          </div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-header">
+            <span>Administration Système</span><span>85%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="--w:85%;--color1:#0ea5e9;--color2:#34d399"></div>
+          </div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-header">
+            <span>OPNsense / Firewall</span><span>80%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="--w:80%;--color1:#7c3aed;--color2:#ec4899"></div>
+          </div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-header">
+            <span>Proxmox VE</span><span>75%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="--w:75%;--color1:#0ea5e9;--color2:#7c3aed"></div>
+          </div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-header">
+            <span>HTML / CSS</span><span>40%</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="--w:40%;--color1:#f59e0b;--color2:#ef4444"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card glass-card">
+          <span class="skill-icon">🔥</span>
+          <span class="skill-name">OPNsense</span>
+        </div>
+        <div class="skill-card glass-card">
+          <span class="skill-icon">📦</span>
+          <span class="skill-name">Proxmox VE</span>
+        </div>
+        <div class="skill-card glass-card">
+          <span class="skill-icon">🔒</span>
+          <span class="skill-name">WireGuard</span>
+        </div>
+        <div class="skill-card glass-card">
+          <span class="skill-icon">💾</span>
+          <span class="skill-name">NAS Synology</span>
+        </div>
+        <div class="skill-card glass-card">
+          <span class="skill-icon">🐧</span>
+          <span class="skill-name">Linux</span>
+        </div>
+        <div class="skill-card glass-card">
+          <span class="skill-icon">🌍</span>
+          <span class="skill-name">HTML / CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets">
+      <div class="section-header">
+        <span class="section-tag">Réalisations</span>
+        <h2>Mes projets</h2>
+      </div>
+      <div class="projets-grid">
+        <div class="projet-card glass-card">
+          <div class="projet-top">
+            <span class="projet-icon">🤖</span>
+            <span class="projet-tag">Perso</span>
+          </div>
+          <h3>IA locale AnythingLLM</h3>
+          <p>Déploiement d'une IA locale sur Proxmox pour interroger la documentation client.</p>
+          <div class="projet-stack">
+            <span>Proxmox</span><span>Docker</span><span>Ollama</span>
+          </div>
+        </div>
+        <div class="projet-card glass-card">
+          <div class="projet-top">
+            <span class="projet-icon">🔒</span>
+            <span class="projet-tag">Client</span>
+          </div>
+          <h3>VPN WireGuard</h3>
+          <p>Configuration d'un accès VPN split tunnel pour un utilisateur externe.</p>
+          <div class="projet-stack">
+            <span>OPNsense</span><span>WireGuard</span>
+          </div>
+        </div>
+        <div class="projet-card glass-card">
+          <div class="projet-top">
+            <span class="projet-icon">🌍</span>
+            <span class="projet-tag en-cours">En cours</span>
+          </div>
+          <h3>Ce site web</h3>
+          <p>Apprentissage du développement web from scratch — HTML, CSS, GitHub Pages.</p>
+          <div class="projet-stack">
+            <span>HTML</span><span>CSS</span><span>GitHub Pages</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="glass-card contact-card">
+        <h2>Une mission ? Un projet ?</h2>
+        <p>N'hésite pas à me contacter pour discuter de tes besoins en infrastructure.</p>
+        <a href="mailto:tonemail@example.com" class="btn-primary">✉️ Envoyer un mail</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Fait avec ❤️ et beaucoup de café — Dany © 2026</p>
+    </footer>
+
+    <!-- Effet curseur RGB -->
+    <canvas id="trail"></canvas>
+
+    <script>
+      const canvas = document.getElementById('trail');
+      const ctx = canvas.getContext('2d');
+      canvas.style.cssText = 'position:fixed;top:0;left:0;pointer-events:none;z-index:9999';
+
+      let W = canvas.width = window.innerWidth;
+      let H = canvas.height = window.innerHeight;
+      window.addEventListener('resize', () => {
+        W = canvas.width = window.innerWidth;
+        H = canvas.height = window.innerHeight;
+      });
+
+      let points = [];
+      let hue = 0;
+
+      window.addEventListener('mousemove', (e) => {
+        hue = (hue + 3) % 360;
+        points.push({ x: e.clientX, y: e.clientY, hue, life: 1 });
+        if (points.length > 80) points.shift();
+      });
+
+      function draw() {
+        ctx.clearRect(0, 0, W, H);
+        points.forEach((p) => {
+          p.life -= 0.025;
+          if (p.life <= 0) return;
+          const radius = p.life * 12;
+          const gradient = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, radius);
+          gradient.addColorStop(0, `hsla(${p.hue}, 100%, 65%, ${p.life})`);
+          gradient.addColorStop(1, `hsla(${p.hue}, 100%, 65%, 0)`);
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, radius, 0, Math.PI * 2);
+          ctx.fillStyle = gradient;
+          ctx.fill();
+        });
+        points = points.filter(p => p.life > 0);
+        requestAnimationFrame(draw);
+      }
+
+      draw();
+    </script>
 
   </body>
 </html>
